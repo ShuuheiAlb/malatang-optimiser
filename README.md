@@ -17,6 +17,6 @@ Underneath it uses a simplified Lasso-style formula to juggle multiple prioritie
 
 ## Inspo
 
-When you're building your Malatang bowl, it's super easy to overload on heavy ingredients like tofu or enoki mushrooms — and the grams (and price) really add up fast.
+When picking up stuff for Malatang bowl, it's super easy to overload on heavy ingredients like tofus or enoki mushrooms - and the grams (and price) can add up really fast.
 
-I want to create a simple Excel tool to help people optimise ingredient choices and portion sizes based on budget or dietary targets. Limitation is, I didn’t have access to super detailed ingredient data (exact weights, macros, prices, etc), but if you do - oh well, I’ve built the template so you can plug those in.
+I want to be able to optimise this. Limitation is, I didn’t have access to super detailed ingredient data (exact weights, macros, prices, etc), but if you do - well, I’ve got the template for you.
