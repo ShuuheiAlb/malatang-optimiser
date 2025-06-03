@@ -1,22 +1,38 @@
 # Malatang Optimiser
 
-This Excel-based tool helps you build a better Malatang bowl - choosing ingredients and portion sizes that keep a good macro balance (protein, carbs, fat) and overall variety, while staying within your budget.
+This file lets you build a better Malatang bowl by choosing ingredients and portion sizes that maintain good macro balance (protein, carbs, fat) and overall variety while staying within your budget.
 
-It's powered by Excel's Solver, so no coding required. You can adjust things like max weight, number of ingredients, and your preferred macro ratio - and it’ll suggest a combo that tries to balance all of that. Set your preference and hit Solve.
+It's powered by Excel's Solver, so no coding required! You can adjust parameters like maximum weight, number of ingredients, and your preferred macro ratio, and it’ll suggest the combination of portions that balance all of that.
 
 ## Data Collection & Methodology
 
-I pull the ingredient names from this site: [Maigoo – Malatang Ingredient List](https://m.maigoo.com/goomai/160395.html) which is then translated into English.
+**Ingredient Data:**
+I sourced ingredient names from [Maigoo – Malatang Ingredient List](https://m.maigoo.com/goomai/160395.html), then translated them into English.
 
-After that, I looked up the nutritional info manually for each item using
-[China Food Nutrition Database](https://nlc.chinanutri.cn/fq/). For this part, no automation yet and still in progress — there’s a lot of veggie types. So the dataset isn’t perfect, but hopefully it’s enough to get the optimisation idea across.
+**Nutritional Information:**
+I manually collected each ingredient data using the [China Food Nutrition Database](https://nlc.chinanutri.cn/fq/). This process isn't automated yet and is still in progress - there are still many vegetable varieties to cover. So the dataset isn't perfect, but hopefully it's enough to get the optimisation concept across.
 
-If you’ve got cleaner data, feel free to plug it into the Excel and go wild.
+**Optimisation Algorithm:**
+This uses a simplified Lasso-style formula to balance multiple priorities:
+- Macro ratio proximity to your target
+- Total weight constraints
+- Number of ingredient variety
 
-Underneath it uses a simplified Lasso-style formula to juggle multiple priorities: how close the macro ratio is to your target, total weights and number of ingredients.
+*If you’ve got cleaner data, feel free to plug it into the Excel template and experiment!*
 
-## Inspo
+## How to Use
 
-When picking up stuff for Malatang bowl, it's super easy to overload on heavy ingredients like tofus or enoki mushrooms - and the grams (and price) can add up really fast.
+1. Open the Excel file
+2. Adjust your preferences:
+   - Maximum total weight
+   - Number of ingredients desired
+   - Target macro ratio (protein:carbs:fat)
+   - Budget constraints
+3. Run Excel's Solver
+4. Review the optimized ingredient selection and portions
 
-I want to be able to optimise this. Limitation is, I didn’t have access to super detailed ingredient data (exact weights, macros, prices, etc), but if you do - well, I’ve got the template for you.
+## Inspiration
+
+When building a Malatang bowl, it's easy to overload on heavy stuff like tofu or enoki mushrooms - and the weight (and thus cost) can ramp up really quickly.
+
+I wanted to create an optimisation solution for this common problem. While I didn't have access to detailed ingredient data (exact weights, macros, prices), I've built a flexible template that can accommodate better data sources in case available.
